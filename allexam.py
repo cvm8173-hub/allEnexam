@@ -2195,8 +2195,12 @@ if __name__ == "__main__":
     try:
         final_data = []
 
-        for page in range(4, 8): 
+        for page in range(1, 5): 
             print(f"Scraping listing page {page}")
+            wrapped_exam = {
+                "exam_id": exam_counter,
+                "exam_data": exam
+            }
             
             exams = scrape_listing_page(driver, page)  # Make scrape_listing_page accept page param
             
@@ -2364,7 +2368,7 @@ if __name__ == "__main__":
                     print("college page error:", e)
                     exam_data["college"] = None    
 
-                final_data.append(exam_data)
+                final_data.append(wrapped_exam)
 
             page += 1  # next listing page
 
