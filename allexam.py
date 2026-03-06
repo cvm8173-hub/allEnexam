@@ -2191,7 +2191,7 @@ def extract_cat_MArch_data(driver, URLS):
 
 if __name__ == "__main__":
     driver = create_driver()
-    counter = 69
+    counter = 118
 
     try:
         final_data = []
