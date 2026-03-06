@@ -2196,7 +2196,7 @@ if __name__ == "__main__":
     try:
         final_data = []
 
-        for page in range(5, 8):
+        for page in range(8, 11):
             print(f"Scraping listing page {page}")
 
             exams = scrape_listing_page(driver, page)
